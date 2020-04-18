@@ -1,1 +1,3 @@
-# MusicPla
+# MusicPlayer
+
+Local music player
