@@ -7,4 +7,7 @@ Local music player
 <div align="center">
 	<img src="./screenshot/screenshot.jpg" /> 
 </div> 
-<br /
+<br />
+<br />
+
+# [License](h
