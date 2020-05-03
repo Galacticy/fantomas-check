@@ -10,4 +10,4 @@ Local music player
 <br />
 <br />
 
-# [License](https://github.com/android-nuc/Musi
+# [License](https://github.com/android-nuc/MusicPlayer/blob/master/LICEN
