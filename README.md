@@ -10,4 +10,9 @@ Local music player
 <br />
 <br />
 
-# [License](https://github.com/android-nuc/MusicPlayer/blob/master/LICEN
+# [License](https://github.com/android-nuc/MusicPlayer/blob/master/LICENSE)
+
+		
+	   Copyright 2018 InnoFang
+
+	
