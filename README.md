@@ -21,4 +21,4 @@ Local music player
 
 	       http://www.apache.org/licenses/LICENSE-2.0
 
-	   Unless required by a
+	   Unless required by applicable law or agreed to in w
