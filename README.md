@@ -22,4 +22,4 @@ Local music player
 	       http://www.apache.org/licenses/LICENSE-2.0
 
 	   Unless required by applicable law or agreed to in writing, software
-	   distributed 
+	   distributed under the License is distr
