@@ -1,1 +1,2 @@
-# Add project specific ProGua
+# Add project specific ProGuard rules here.
+# You can 
