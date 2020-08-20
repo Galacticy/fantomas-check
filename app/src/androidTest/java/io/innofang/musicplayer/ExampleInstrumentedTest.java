@@ -10,4 +10,4 @@ import org.junit.runner.RunWith;
 import static org.junit.Assert.*;
 
 /**
- * Instrumented test
+ * Instrumented test, which will execute on an Andro
