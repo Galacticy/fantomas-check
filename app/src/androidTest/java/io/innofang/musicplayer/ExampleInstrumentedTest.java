@@ -14,4 +14,5 @@ import static org.junit.Assert.*;
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
-@R
+@RunWith(AndroidJUnit4.class)
+publ
