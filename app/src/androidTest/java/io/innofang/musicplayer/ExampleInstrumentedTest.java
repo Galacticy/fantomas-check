@@ -21,4 +21,4 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("io.innofang.m
+        assertEquals("io.innofang.musicplayer", appContext.getPackage
