@@ -4,4 +4,7 @@ import android.support.v4.app.Fragment;
 
 import io.innofang.musicplayer.R;
 import io.innofang.musicplayer.base.FragmentContainerActivity;
-import io.innofang.musicplayer.fragment.PlayLocalMusi
+import io.innofang.musicplayer.fragment.PlayLocalMusicFragment;
+
+/**
+ * Author
