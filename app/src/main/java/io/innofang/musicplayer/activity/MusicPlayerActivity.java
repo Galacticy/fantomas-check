@@ -7,4 +7,5 @@ import io.innofang.musicplayer.base.FragmentContainerActivity;
 import io.innofang.musicplayer.fragment.PlayLocalMusicFragment;
 
 /**
- * Author
+ * Author: Inno Fang
+ * Time: 2018/
