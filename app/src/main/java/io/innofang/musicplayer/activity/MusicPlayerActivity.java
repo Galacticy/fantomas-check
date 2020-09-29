@@ -10,4 +10,7 @@ import io.innofang.musicplayer.fragment.PlayLocalMusicFragment;
  * Author: Inno Fang
  * Time: 2018/1/8 20:18
  * Description:
- *
+ */
+
+
+public class MusicPla
