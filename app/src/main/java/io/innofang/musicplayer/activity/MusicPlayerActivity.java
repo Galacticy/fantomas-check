@@ -13,4 +13,4 @@ import io.innofang.musicplayer.fragment.PlayLocalMusicFragment;
  */
 
 
-public class MusicPla
+public class MusicPlayerActivity extends FragmentCont
