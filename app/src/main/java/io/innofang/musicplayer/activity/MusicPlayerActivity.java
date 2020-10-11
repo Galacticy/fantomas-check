@@ -13,4 +13,5 @@ import io.innofang.musicplayer.fragment.PlayLocalMusicFragment;
  */
 
 
-public class MusicPlayerActivity extends FragmentCont
+public class MusicPlayerActivity extends FragmentContainerActivity {
+    @Overr
