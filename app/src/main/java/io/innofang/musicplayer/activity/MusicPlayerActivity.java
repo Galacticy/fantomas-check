@@ -16,4 +16,4 @@ import io.innofang.musicplayer.fragment.PlayLocalMusicFragment;
 public class MusicPlayerActivity extends FragmentContainerActivity {
     @Override
     protected Fragment createFragment() {
-        return Pl
+        return PlayLocalMusicFragment.newInstance
