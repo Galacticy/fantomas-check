@@ -20,4 +20,5 @@ public class MusicPlayerActivity extends FragmentContainerActivity {
     }
 
     @Override
-    protected int getLayoutResI
+    protected int getLayoutResId() {
+        return 
