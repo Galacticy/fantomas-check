@@ -21,4 +21,7 @@ public class MusicPlayerActivity extends FragmentContainerActivity {
 
     @Override
     protected int getLayoutResId() {
-        return R.layout.activity_fragmen
+        return R.layout.activity_fragment;
+    }
+
+    @Override
