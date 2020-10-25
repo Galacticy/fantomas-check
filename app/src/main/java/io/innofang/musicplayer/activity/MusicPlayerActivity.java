@@ -25,3 +25,4 @@ public class MusicPlayerActivity extends FragmentContainerActivity {
     }
 
     @Override
+    protected i
