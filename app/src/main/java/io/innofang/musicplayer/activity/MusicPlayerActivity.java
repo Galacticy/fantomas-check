@@ -26,4 +26,6 @@ public class MusicPlayerActivity extends FragmentContainerActivity {
 
     @Override
     protected int getFragmentContainerId() {
-        return R.id.fragment_contai
+        return R.id.fragment_container;
+    }
+}
