@@ -15,3 +15,24 @@ import java.util.List;
 
 import io.innofang.musicplayer.R;
 import io.innofang.musicplayer.bean.Song;
+
+/**
+ * Author: Inno Fang
+ * Time: 2018/1/8 21:04
+ * Description:
+ */
+
+
+public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.MusicViewHolder> {
+
+    private Context mContext;
+    private List<Song> mSongList;
+
+    public MusicAdapter(Context context, List<Song> songList) {
+        mContext = context;
+        mSongList = songList;
+    }
+
+    public List<Song> getSongList() {
+        return mSongList;
+    }
