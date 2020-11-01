@@ -36,3 +36,41 @@ public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.MusicViewHol
     public List<Song> getSongList() {
         return mSongList;
     }
+
+    public void setSongList(List<Song> songList) {
+        mSongList.clear();
+        mSongList.addAll(songList);
+        notifyDataSetChanged();
+    }
+
+    public void addSongs(List<Song> songs) {
+        mSongList.addAll(songs);
+        notifyDataSetChanged();
+    }
+
+    @Override
+    public MusicViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(mContext).inflate(R.layout.item_music, parent, false);
+        return new MusicViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(MusicViewHolder holder, int position) {
+        holder.bindHolder(mSongList.get(position), position);
+    }
+
+    @Override
+    public int getItemCount() {
+        return mSongList.size();
+    }
+
+    public class MusicViewHolder extends RecyclerView.ViewHolder {
+
+        private TextView mItemTextView;
+        private TextView mMusicNameTextView;
+        private TextView mMusicInfoTextView;
+        private ImageView mMoreInfoImageView;
+
+        public MusicViewHolder(View itemView) {
+            super(itemView);
+            mItemTextView = itemView.findViewById(R.id.item_text_view);
