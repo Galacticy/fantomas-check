@@ -74,3 +74,22 @@ public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.MusicViewHol
         public MusicViewHolder(View itemView) {
             super(itemView);
             mItemTextView = itemView.findViewById(R.id.item_text_view);
+            mMusicNameTextView = itemView.findViewById(R.id.music_name_text_view);
+            mMusicInfoTextView = itemView.findViewById(R.id.music_info_text_view);
+            mMoreInfoImageView = itemView.findViewById(R.id.more_info_image_view);
+        }
+
+        public void bindHolder(final Song song, int position) {
+            mItemTextView.setText((position + 1) + "");
+            mMusicNameTextView.setText(song.getTitle());
+            String info = song.getSinger() + " - " + song.getAlbum();
+            mMusicInfoTextView.setText(info);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mOnItemClickListener.onClick(song);
+                }
+            });
+            mMoreInfoImageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
