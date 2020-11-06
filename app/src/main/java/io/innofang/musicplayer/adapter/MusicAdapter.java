@@ -93,3 +93,27 @@ public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.MusicViewHol
             mMoreInfoImageView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    AlertDialog dialog = new AlertDialog.Builder(mContext)
+                            .setTitle(song.getTitle())
+                            .setMessage(song.toString())
+                            .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+
+                                }
+                            })
+                            .show();
+                }
+            });
+        }
+    }
+
+    private OnItemClickListener mOnItemClickListener;
+
+    public void setContext(Context context) {
+        mContext = context;
+    }
+
+    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
+        mOnItemClickListener = onItemClickListener;
+    }
