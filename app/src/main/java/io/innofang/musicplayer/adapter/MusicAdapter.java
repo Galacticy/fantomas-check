@@ -117,3 +117,8 @@ public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.MusicViewHol
     public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
         mOnItemClickListener = onItemClickListener;
     }
+
+    public interface OnItemClickListener {
+        void onClick(Song song);
+    }
+}
