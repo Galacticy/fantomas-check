@@ -23,3 +23,18 @@ public abstract class FragmentContainerActivity extends AppCompatActivity {
     protected abstract int getFragmentContainerId();
 
     @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(getLayoutResId());
+
+        FragmentManager fm = getSupportFragmentManager();
+        Fragment fragment = fm.findFragmentById(getFragmentContainerId());
+
+        if (null == fragment) {
+            fragment = createFragment();
+            fm.beginTransaction()
+                    .add(getFragmentContainerId(), fragment)
+                    .commit();
+        }
+    }
+}
