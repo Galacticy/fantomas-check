@@ -97,3 +97,13 @@ public class Song {
     @Override
     public String toString() {
         return  "文件名：" + fileName + '\n' +
+                "音乐名：" + title + '\n' +
+                "时长：" + ((duration / 1000) / 60) +" 分 "+ ((duration / 1000) % 60) + " 秒\n" +
+                "歌手：" + singer + '\n' +
+                "专辑：" + album + '\n' +
+                "年份：" + year + '\n' +
+                "文件类型：" + type + '\n' +
+                "大小：" + size + '\n' +
+                "文件路径：" + fileUrl + '\n';
+    }
+}
