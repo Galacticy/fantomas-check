@@ -16,3 +16,26 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.SeekBar;
+import android.widget.Toast;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+import io.innofang.musicplayer.R;
+import io.innofang.musicplayer.adapter.MusicAdapter;
+import io.innofang.musicplayer.bean.Song;
+import io.innofang.musicplayer.utils.AudioUtils;
+import io.innofang.musicplayer.utils.RequestPermissions;
+
+/**
+ * Author: Inno Fang
+ * Time: 2018/1/8 20:19
+ * Description:
+ */
+
+
+public class PlayLocalMusicFragment extends Fragment implements View.OnClickListener, SeekBar.OnSeekBarChangeListener {
+
+    private static final String TAG = "PlayLocalMusicFragment";
