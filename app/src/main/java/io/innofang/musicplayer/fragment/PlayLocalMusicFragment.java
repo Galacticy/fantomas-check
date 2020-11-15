@@ -64,3 +64,28 @@ public class PlayLocalMusicFragment extends Fragment implements View.OnClickList
     // 保存现在的播放模式
     @DrawableRes
     private int playMode = PLAY_RANDOM;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // 设置 Fragment 可以设置标题栏
+        setHasOptionsMenu(true);
+
+        // 对媒体适配器进行初始化
+        mMusicAdapter = new MusicAdapter(getContext(), mSongList);
+    }
+
+    /**
+     * 用于获取当前 Fragment 的实例
+     *
+     * @return
+     */
+    public static PlayLocalMusicFragment newInstance() {
+
+        Bundle args = new Bundle();
+
+        PlayLocalMusicFragment fragment = new PlayLocalMusicFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
