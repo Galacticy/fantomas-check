@@ -39,3 +39,28 @@ import io.innofang.musicplayer.utils.RequestPermissions;
 public class PlayLocalMusicFragment extends Fragment implements View.OnClickListener, SeekBar.OnSeekBarChangeListener {
 
     private static final String TAG = "PlayLocalMusicFragment";
+
+    private ImageView mSkipPrevImageView;
+    private ImageView mSkipNextImageView;
+    private ImageView mPlayOrPauseImageView;
+    private ImageView mPlayModeImageView;
+    private RecyclerView mMusicRecyclerView;
+    private SeekBar mSeekBar;
+
+    private MusicAdapter mMusicAdapter;
+    private MediaPlayer mMediaPlayer = new MediaPlayer();
+
+    // 保存查到的所有歌曲
+    private List<Song> mSongList = new ArrayList<>();
+
+    // 歌曲在 mSongList 的下标
+    private int songIndex = -1;
+
+    // 播放模式选择，队列播放，单曲循环，随机播放
+    private final int PLAY_QUEUE = R.drawable.ic_queue;
+    private final int REPEAT_ONE = R.drawable.ic_repeat_one;
+    private final int PLAY_RANDOM = R.drawable.ic_random;
+
+    // 保存现在的播放模式
+    @DrawableRes
+    private int playMode = PLAY_RANDOM;
