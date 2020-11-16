@@ -89,3 +89,28 @@ public class PlayLocalMusicFragment extends Fragment implements View.OnClickList
         return fragment;
     }
 
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_play_local_music, container, false);
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        mSkipPrevImageView = view.findViewById(R.id.skip_previous_image_view);
+        mSkipNextImageView = view.findViewById(R.id.skip_next_image_view);
+        mPlayOrPauseImageView = view.findViewById(R.id.play_or_pause_image_view);
+        mPlayModeImageView = view.findViewById(R.id.play_mode_image_view);
+        mMusicRecyclerView = view.findViewById(R.id.music_recycler_view);
+        mSeekBar = view.findViewById(R.id.seek_bar);
+
+
+        // 权限申请
+        RequestPermissions.requestPermissions(getActivity(),
+                new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                new RequestPermissions.OnPermissionsRequestListener() {
+                    @Override
+                    public void onGranted() {
