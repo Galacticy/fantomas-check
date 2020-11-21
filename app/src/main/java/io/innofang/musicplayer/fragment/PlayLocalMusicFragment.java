@@ -114,3 +114,35 @@ public class PlayLocalMusicFragment extends Fragment implements View.OnClickList
                 new RequestPermissions.OnPermissionsRequestListener() {
                     @Override
                     public void onGranted() {
+                        // 同意权限后加载音乐列表并初始化事件
+                        loadMusicList();
+                        initEvent();
+                    }
+
+                    @Override
+                    public void onDenied(List<String> deniedList) {
+                        Toast.makeText(getActivity(), "拒绝权限将无法获取歌曲目录", Toast.LENGTH_LONG).show();
+                    }
+                });
+    }
+
+    /**
+     * 异步加载本地歌曲，UI 线程不做耗时操作
+     */
+    private void loadMusicList() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                final List<Song> songs = AudioUtils.getAllSongs(getContext());
+                // 不能在子线程更新 UI
+                getActivity().runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        mMusicAdapter.addSongs(songs);
+                    }
+                });
+            }
+        }).start();
+    }
+
+    /**
