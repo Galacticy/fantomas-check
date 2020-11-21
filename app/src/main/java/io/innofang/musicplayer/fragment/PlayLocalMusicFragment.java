@@ -146,3 +146,23 @@ public class PlayLocalMusicFragment extends Fragment implements View.OnClickList
     }
 
     /**
+     * 初始化设置，及设置点击事件
+     */
+    private void initEvent() {
+        mMusicRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        mMusicRecyclerView.setAdapter(mMusicAdapter);
+        mMusicAdapter.setOnItemClickListener(new MusicAdapter.OnItemClickListener() {
+            @Override
+            public void onClick(Song song) {
+                playMusic(song);
+            }
+        });
+
+        changePlayMode();
+
+        mSeekBar.setOnSeekBarChangeListener(this);
+        mSkipNextImageView.setOnClickListener(this);
+        mSkipPrevImageView.setOnClickListener(this);
+        mPlayOrPauseImageView.setOnClickListener(this);
+        mPlayModeImageView.setOnClickListener(this);
+    }
