@@ -166,3 +166,25 @@ public class PlayLocalMusicFragment extends Fragment implements View.OnClickList
         mPlayOrPauseImageView.setOnClickListener(this);
         mPlayModeImageView.setOnClickListener(this);
     }
+
+    /**
+     * 播放歌曲方法
+     *
+     * @param song
+     */
+    private void playMusic(Song song) {
+        try {
+            // 重置 MediaPlayer 对象为刚刚创建的状态
+            mMediaPlayer.reset();
+
+            // 设置资源并置 MediaPlayer 为准备状态
+//            File file = new File(song.getFileUrl());
+            mMediaPlayer.setDataSource(song.getFileUrl());
+            mMediaPlayer.prepare();
+
+            // 保存当前歌曲下标
+            songIndex = mSongList.indexOf(song);
+
+            // 标题栏显示歌名，子标题显示 专辑-歌手
+            AppCompatActivity activity = (AppCompatActivity) getActivity();
+            activity.getSupportActionBar().setTitle(song.getTitle());
