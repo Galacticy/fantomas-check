@@ -248,3 +248,43 @@ public class PlayLocalMusicFragment extends Fragment implements View.OnClickList
                 if (playMode == PLAY_QUEUE) playMode = REPEAT_ONE;
                 else if (playMode == REPEAT_ONE) playMode = PLAY_RANDOM;
                 else if (playMode == PLAY_RANDOM) playMode = PLAY_QUEUE;
+                changePlayMode();
+                break;
+        }
+    }
+
+    private void playNextSong() {
+        // 如果不是播放状态，那么无法点击
+        if (!mMediaPlayer.isPlaying()) return;
+
+        // 对播放的歌进行更新
+        if (playMode == PLAY_RANDOM) {
+            songIndex = new Random().nextInt(mSongList.size());
+        } else {
+            if (songIndex == mSongList.size() - 1) songIndex = 0;
+            else songIndex++;
+        }
+        playMusic(mSongList.get(songIndex));
+    }
+
+    /**
+     * 更改播放模式
+     */
+    private void changePlayMode() {
+        if (playMode == REPEAT_ONE) mMediaPlayer.setLooping(true);
+        else if (playMode == PLAY_QUEUE) {
+            mMediaPlayer.setLooping(false);
+            mMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    playMusic(mSongList.get((songIndex + 1) % mSongList.size()));
+                }
+            });
+        } else if (playMode == PLAY_RANDOM) {
+            mMediaPlayer.setLooping(false);
+            mMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    playMusic(mSongList.get(new Random().nextInt(mSongList.size())));
+                }
+            });
