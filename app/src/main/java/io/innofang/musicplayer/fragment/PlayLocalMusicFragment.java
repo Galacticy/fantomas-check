@@ -188,3 +188,29 @@ public class PlayLocalMusicFragment extends Fragment implements View.OnClickList
             // 标题栏显示歌名，子标题显示 专辑-歌手
             AppCompatActivity activity = (AppCompatActivity) getActivity();
             activity.getSupportActionBar().setTitle(song.getTitle());
+            activity.getSupportActionBar().setSubtitle(song.getSinger() + " - " + song.getAlbum());
+
+            // 播放音乐
+            mMediaPlayer.start();
+            // 一旦播放音乐就是显示停止图标
+            mPlayOrPauseImageView.setImageResource(R.drawable.ic_pause);
+
+            // 设置进度条持续时间
+            mSeekBar.setMax(song.getDuration());
+
+            // 更新进度条
+            new Thread(mRunnable).start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.skip_previous_image_view:
+                // 如果不是播放状态，那么无法点击
+                if (!mMediaPlayer.isPlaying()) return;
+
+                // 对播放的歌进行越界检查并更新
+                if (songIndex == 0) songIndex = mSongList.size() - 1;
