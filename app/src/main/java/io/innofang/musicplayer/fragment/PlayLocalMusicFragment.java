@@ -214,3 +214,19 @@ public class PlayLocalMusicFragment extends Fragment implements View.OnClickList
 
                 // 对播放的歌进行越界检查并更新
                 if (songIndex == 0) songIndex = mSongList.size() - 1;
+                else songIndex--;
+
+                // 播放
+                playMusic(mSongList.get(songIndex));
+                break;
+            case R.id.skip_next_image_view:
+                // 播放下一首歌曲
+                playNextSong();
+                break;
+            case R.id.play_or_pause_image_view:
+                if (mMediaPlayer.isPlaying()) {
+                    mPlayOrPauseImageView.setImageResource(R.drawable.ic_play);
+                    mMediaPlayer.pause();
+                } else {
+                    // 如果当前处于初始状态，没有播放歌曲，则根据播放模式来播放第一首歌
+                    if (songIndex == -1 && !mSongList.isEmpty()) {
