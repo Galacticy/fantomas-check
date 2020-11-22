@@ -230,3 +230,21 @@ public class PlayLocalMusicFragment extends Fragment implements View.OnClickList
                 } else {
                     // 如果当前处于初始状态，没有播放歌曲，则根据播放模式来播放第一首歌
                     if (songIndex == -1 && !mSongList.isEmpty()) {
+                        if (playMode == PLAY_RANDOM)
+                            songIndex = new Random().nextInt(mSongList.size());
+                        else
+                            songIndex = 0;
+                        playMusic(mSongList.get(songIndex));
+                    }
+                    mPlayOrPauseImageView.setImageResource(R.drawable.ic_pause);
+                    mMediaPlayer.start();
+
+                    // 停止过后，重启线程开始更新进度条
+                    new Thread(mRunnable).start();
+                }
+                break;
+            case R.id.play_mode_image_view:
+                // 更改播放模式
+                if (playMode == PLAY_QUEUE) playMode = REPEAT_ONE;
+                else if (playMode == REPEAT_ONE) playMode = PLAY_RANDOM;
+                else if (playMode == PLAY_RANDOM) playMode = PLAY_QUEUE;
