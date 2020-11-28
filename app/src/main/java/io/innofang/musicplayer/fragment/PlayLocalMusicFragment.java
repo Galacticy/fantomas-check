@@ -332,3 +332,29 @@ public class PlayLocalMusicFragment extends Fragment implements View.OnClickList
      */
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+
+    }
+
+    /**
+     * 开始滑动时调用
+     * @param seekBar
+     */
+    @Override
+    public void onStartTrackingTouch(SeekBar seekBar) {
+
+    }
+
+    /**
+     * 停止滑动时调用
+     * @param seekBar
+     */
+    @Override
+    public void onStopTrackingTouch(SeekBar seekBar) {
+
+        // 如果当前没有歌那么不设置进度并且返回
+        if (songIndex == -1) {
+            seekBar.setProgress(0);
+            return;
+        }
+
+        // 如果当前进度条已经到了末尾那么直接跳到下一首，并设置当前进度为 0
