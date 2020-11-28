@@ -358,3 +358,18 @@ public class PlayLocalMusicFragment extends Fragment implements View.OnClickList
         }
 
         // 如果当前进度条已经到了末尾那么直接跳到下一首，并设置当前进度为 0
+        if (seekBar.getProgress() == seekBar.getMax()) {
+            // 只要不是单曲循环那就播放下一首，否则重新播放
+            if (playMode != REPEAT_ONE) {
+                playNextSong();
+            }
+            seekBar.setProgress(0);
+            return;
+        }
+
+        mMediaPlayer.seekTo(seekBar.getProgress());
+        // 如果不是播放状态设置为播放状态
+        if (!mMediaPlayer.isPlaying())
+            mMediaPlayer.start();
+    }
+}
