@@ -288,3 +288,23 @@ public class PlayLocalMusicFragment extends Fragment implements View.OnClickList
                     playMusic(mSongList.get(new Random().nextInt(mSongList.size())));
                 }
             });
+        }
+        mPlayModeImageView.setImageResource(playMode);
+    }
+
+
+    /**
+     * 释放媒体资源
+     */
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        if (mMediaPlayer != null) {
+            mMediaPlayer.stop();
+            mMediaPlayer.release();
+        }
+    }
+
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
