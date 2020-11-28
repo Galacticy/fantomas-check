@@ -308,3 +308,27 @@ public class PlayLocalMusicFragment extends Fragment implements View.OnClickList
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        RequestPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
+
+    /**
+     * 用于更新进度条的线程
+     */
+    Runnable mRunnable = new Runnable() {
+        @Override
+        public void run() {
+            while (mMediaPlayer.isPlaying()) {
+                mSeekBar.setProgress(mMediaPlayer.getCurrentPosition());
+            }
+        }
+    };
+
+    /**
+     * 进度条改变时调用
+     * @param seekBar
+     * @param progress
+     * @param fromUser
+     */
+    @Override
+    public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
