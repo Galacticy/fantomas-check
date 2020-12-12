@@ -17,4 +17,7 @@ import io.innofang.musicplayer.bean.Song;
  * 获取所有音乐文件
  */
 
-public class Audio
+public class AudioUtils {
+
+    /**
+     * 获取sd卡所有的音
