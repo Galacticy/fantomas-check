@@ -14,4 +14,7 @@ import io.innofang.musicplayer.bean.Song;
  * Time: 2018/1/8 20:04
  * Description:
  *
- * 获取所
+ * 获取所有音乐文件
+ */
+
+public class Audio
