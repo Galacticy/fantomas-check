@@ -30,4 +30,5 @@ public class AudioUtils {
         List<Song> songs = null;
 
         Cursor cursor = context.getContentResolver().query(
-                MediaStore.Audio.
+                MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,
+ 
