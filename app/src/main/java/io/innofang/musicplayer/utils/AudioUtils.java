@@ -29,4 +29,5 @@ public class AudioUtils {
 
         List<Song> songs = null;
 
-        Cursor cursor = context.getCo
+        Cursor cursor = context.getContentResolver().query(
+         
