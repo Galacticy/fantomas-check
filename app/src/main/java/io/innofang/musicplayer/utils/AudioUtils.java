@@ -32,4 +32,4 @@ public class AudioUtils {
         Cursor cursor = context.getContentResolver().query(
                 MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,
                 new String[] { MediaStore.Audio.Media._ID,
-                   
+                        MediaStore.Audio.Media.DIS
