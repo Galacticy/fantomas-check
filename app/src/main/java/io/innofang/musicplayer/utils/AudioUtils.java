@@ -35,4 +35,5 @@ public class AudioUtils {
                         MediaStore.Audio.Media.DISPLAY_NAME,
                         MediaStore.Audio.Media.TITLE,
                         MediaStore.Audio.Media.DURATION,
-                        MediaStore.Audio.Media.
+                        MediaStore.Audio.Media.ARTIST,
+                     
