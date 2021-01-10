@@ -38,4 +38,5 @@ public class AudioUtils {
                         MediaStore.Audio.Media.ARTIST,
                         MediaStore.Audio.Media.ALBUM,
                         MediaStore.Audio.Media.YEAR,
-                        MediaStore.
+                        MediaStore.Audio.Media.MIME_TYPE,
+     
