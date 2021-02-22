@@ -42,4 +42,4 @@ public class AudioUtils {
                         MediaStore.Audio.Media.SIZE,
                         MediaStore.Audio.Media.DATA },
                 MediaStore.Audio.Media.MIME_TYPE + "=? or "
-                        + MediaStore.Audio.Med
+                        + MediaStore.Audio.Media.MIME_TYPE + "=
