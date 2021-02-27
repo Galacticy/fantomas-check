@@ -43,4 +43,4 @@ public class AudioUtils {
                         MediaStore.Audio.Media.DATA },
                 MediaStore.Audio.Media.MIME_TYPE + "=? or "
                         + MediaStore.Audio.Media.MIME_TYPE + "=?",
-                new
+                new String[] { "audio/mp
