@@ -47,4 +47,6 @@ public class AudioUtils {
 
         songs = new ArrayList<Song>();
 
-        if (cursor.m
+        if (cursor.moveToFirst()) {
+
+            Son
