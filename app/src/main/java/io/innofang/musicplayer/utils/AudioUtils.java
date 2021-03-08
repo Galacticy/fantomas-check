@@ -49,4 +49,6 @@ public class AudioUtils {
 
         if (cursor.moveToFirst()) {
 
-            Son
+            Song song = null;
+
+            do
