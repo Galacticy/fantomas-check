@@ -51,4 +51,5 @@ public class AudioUtils {
 
             Song song = null;
 
-            do
+            do {
+                song = new
