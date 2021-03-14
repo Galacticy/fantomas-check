@@ -54,4 +54,5 @@ public class AudioUtils {
             do {
                 song = new Song();
                 // 文件名
-                song.setFileName(cursor.getString
+                song.setFileName(cursor.getString(1));
+                // 歌
