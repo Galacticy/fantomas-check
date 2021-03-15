@@ -55,4 +55,5 @@ public class AudioUtils {
                 song = new Song();
                 // 文件名
                 song.setFileName(cursor.getString(1));
-                // 歌
+                // 歌曲名
+                song.setTi
