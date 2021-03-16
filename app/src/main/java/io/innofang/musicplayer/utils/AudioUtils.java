@@ -57,4 +57,5 @@ public class AudioUtils {
                 song.setFileName(cursor.getString(1));
                 // 歌曲名
                 song.setTitle(cursor.getString(2));
-   
+                // 时长
+         
