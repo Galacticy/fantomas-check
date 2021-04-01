@@ -58,4 +58,6 @@ public class AudioUtils {
                 // 歌曲名
                 song.setTitle(cursor.getString(2));
                 // 时长
-                song.setDuration(cursor.get
+                song.setDuration(cursor.getInt(3));
+                // 歌手名
+   
