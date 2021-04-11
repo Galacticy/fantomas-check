@@ -60,4 +60,4 @@ public class AudioUtils {
                 // 时长
                 song.setDuration(cursor.getInt(3));
                 // 歌手名
-                song.setS
+                song.setSinger(cursor.getS
