@@ -62,4 +62,4 @@ public class AudioUtils {
                 // 歌手名
                 song.setSinger(cursor.getString(4));
                 // 专辑名
-                song.
+                song.setAlbum(cursor.getString(5))
