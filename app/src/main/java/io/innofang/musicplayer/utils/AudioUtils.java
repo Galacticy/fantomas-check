@@ -65,4 +65,5 @@ public class AudioUtils {
                 song.setAlbum(cursor.getString(5));
                 // 年代
                 if (cursor.getString(6) != null) {
-                    song.setYear(cur
+                    song.setYear(cursor.getString(6));
+              
