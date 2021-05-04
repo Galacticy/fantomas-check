@@ -67,4 +67,5 @@ public class AudioUtils {
                 if (cursor.getString(6) != null) {
                     song.setYear(cursor.getString(6));
                 } else {
-               
+                    song.setYear("未知");
+    
