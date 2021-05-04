@@ -64,4 +64,4 @@ public class AudioUtils {
                 // 专辑名
                 song.setAlbum(cursor.getString(5));
                 // 年代
-               
+                if (cursor.getString(6) !
