@@ -69,4 +69,5 @@ public class AudioUtils {
                 } else {
                     song.setYear("未知");
                 }
-                /
+                // 歌曲格式
+                if ("aud
