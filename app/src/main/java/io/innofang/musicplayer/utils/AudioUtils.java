@@ -70,4 +70,4 @@ public class AudioUtils {
                     song.setYear("未知");
                 }
                 // 歌曲格式
-                if ("aud
+                if ("audio/mpeg".equals(cursor.getStri
