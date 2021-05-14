@@ -72,4 +72,5 @@ public class AudioUtils {
                 // 歌曲格式
                 if ("audio/mpeg".equals(cursor.getString(7).trim())) {
                     song.setType("mp3");
-                } else if ("audio/x-ms-wma".equals(curs
+                } else if ("audio/x-ms-wma".equals(cursor.getString(7).trim())) {
+ 
