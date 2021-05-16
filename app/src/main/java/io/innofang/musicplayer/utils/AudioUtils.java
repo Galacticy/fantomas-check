@@ -75,4 +75,5 @@ public class AudioUtils {
                 } else if ("audio/x-ms-wma".equals(cursor.getString(7).trim())) {
                     song.setType("wma");
                 }
-     
+                // 文件大小
+       
