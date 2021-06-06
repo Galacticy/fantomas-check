@@ -80,4 +80,5 @@ public class AudioUtils {
                     float size = cursor.getInt(8) / 1024f / 1024f;
                     song.setSize((size + "").substring(0, 4) + "M");
                 } else {
-                  
+                    song.setSize("未知");
+   
