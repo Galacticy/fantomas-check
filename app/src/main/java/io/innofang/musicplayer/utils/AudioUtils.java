@@ -84,4 +84,5 @@ public class AudioUtils {
                 }
                 // 文件路径
                 if (cursor.getString(9) != null) {
-                    song.setFileUrl(cursor.g
+                    song.setFileUrl(cursor.getString(9));
+                
