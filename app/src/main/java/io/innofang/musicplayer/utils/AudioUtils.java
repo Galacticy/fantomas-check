@@ -87,4 +87,4 @@ public class AudioUtils {
                     song.setFileUrl(cursor.getString(9));
                 }
                 songs.add(song);
-            } whil
+            } while (cursor.moveToNext());
