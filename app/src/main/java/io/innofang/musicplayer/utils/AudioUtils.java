@@ -89,4 +89,7 @@ public class AudioUtils {
                 songs.add(song);
             } while (cursor.moveToNext());
 
-            cursor.
+            cursor.close();
+
+        }
+        ret
