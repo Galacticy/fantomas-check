@@ -92,4 +92,7 @@ public class AudioUtils {
             cursor.close();
 
         }
-        ret
+        return songs;
+    }
+
+}
