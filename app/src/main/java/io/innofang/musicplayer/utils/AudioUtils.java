@@ -86,4 +86,5 @@ public class AudioUtils {
                 if (cursor.getString(9) != null) {
                     song.setFileUrl(cursor.getString(9));
                 }
-                songs.add(son
+                songs.add(song);
+            } whil
