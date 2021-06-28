@@ -18,4 +18,4 @@ import java.util.List;
 
 public class RequestPermissions {
 
-    public s
+    public static final int PERMISSIONS_REQUE
