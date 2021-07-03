@@ -20,4 +20,4 @@ public class RequestPermissions {
 
     public static final int PERMISSIONS_REQUEST_CODE = 10;
 
-    private static OnPermissio
+    private static OnPermissionsRequestListener sListe
