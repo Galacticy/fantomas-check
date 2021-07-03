@@ -23,4 +23,4 @@ public class RequestPermissions {
     private static OnPermissionsRequestListener sListener;
 
     public static void requestPermissions(Activity activity, String[] permissions,
-                                          OnPer
+                                          OnPermissionsRequestListen
