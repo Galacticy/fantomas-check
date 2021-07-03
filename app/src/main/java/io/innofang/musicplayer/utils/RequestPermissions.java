@@ -22,4 +22,4 @@ public class RequestPermissions {
 
     private static OnPermissionsRequestListener sListener;
 
-    public stati
+    public static void requestPermissions(Activity activ
