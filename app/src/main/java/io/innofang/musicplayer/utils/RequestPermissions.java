@@ -29,4 +29,4 @@ public class RequestPermissions {
 
         List<String> permissionList = new ArrayList<>();
 
-        for (int i = 0;
+        for (int i = 0; i < permissions.length; i++)
