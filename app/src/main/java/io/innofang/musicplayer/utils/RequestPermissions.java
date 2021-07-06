@@ -25,4 +25,6 @@ public class RequestPermissions {
     public static void requestPermissions(Activity activity, String[] permissions,
                                           OnPermissionsRequestListener listener) {
 
-        sLi
+        sListener = listener;
+
+      
