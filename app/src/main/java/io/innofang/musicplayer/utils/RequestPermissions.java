@@ -27,4 +27,6 @@ public class RequestPermissions {
 
         sListener = listener;
 
-        List<String> permission
+        List<String> permissionList = new ArrayList<>();
+
+   
