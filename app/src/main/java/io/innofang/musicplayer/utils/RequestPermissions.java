@@ -31,4 +31,5 @@ public class RequestPermissions {
 
         for (int i = 0; i < permissions.length; i++) {
             if (ContextCompat.checkSelfPermission(activity, permissions[i])
-                    != PackageManage
+                    != PackageManager.PERMISSION_GRANTED) {
+   
