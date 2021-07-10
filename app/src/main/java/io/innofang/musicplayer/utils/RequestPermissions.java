@@ -36,4 +36,5 @@ public class RequestPermissions {
             }
         }
 
-        if (!permis
+        if (!permissionList.isEmpty()) {
+           
