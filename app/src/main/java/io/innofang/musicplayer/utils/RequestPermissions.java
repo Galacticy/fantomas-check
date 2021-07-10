@@ -34,4 +34,6 @@ public class RequestPermissions {
                     != PackageManager.PERMISSION_GRANTED) {
                 permissionList.add(permissions[i]);
             }
- 
+        }
+
+        if (!permis
