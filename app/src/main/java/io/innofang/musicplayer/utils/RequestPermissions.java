@@ -38,4 +38,4 @@ public class RequestPermissions {
 
         if (!permissionList.isEmpty()) {
             ActivityCompat.requestPermissions(activity,
-       
+                    permissionL
