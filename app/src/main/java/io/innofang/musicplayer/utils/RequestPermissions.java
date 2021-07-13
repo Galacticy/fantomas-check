@@ -37,4 +37,5 @@ public class RequestPermissions {
         }
 
         if (!permissionList.isEmpty()) {
-            ActivityCompat.requestP
+            ActivityCompat.requestPermissions(activity,
+       
