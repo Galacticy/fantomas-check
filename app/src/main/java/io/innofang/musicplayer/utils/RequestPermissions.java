@@ -38,4 +38,4 @@ public class RequestPermissions {
 
         if (!permissionList.isEmpty()) {
             ActivityCompat.requestPermissions(activity,
-                    permissionList.toArray(new Stri
+                    permissionList.toArray(new String[permissionList.size()
