@@ -40,4 +40,5 @@ public class RequestPermissions {
             ActivityCompat.requestPermissions(activity,
                     permissionList.toArray(new String[permissionList.size()]),
                     PERMISSIONS_REQUEST_CODE);
-    
+        } else {
+            li
