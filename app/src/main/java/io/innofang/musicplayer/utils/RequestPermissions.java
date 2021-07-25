@@ -41,4 +41,6 @@ public class RequestPermissions {
                     permissionList.toArray(new String[permissionList.size()]),
                     PERMISSIONS_REQUEST_CODE);
         } else {
-            li
+            listener.onGranted();
+        }
+    
