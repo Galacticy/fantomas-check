@@ -43,4 +43,6 @@ public class RequestPermissions {
         } else {
             listener.onGranted();
         }
-    
+    }
+
+    public static void onRequ
