@@ -45,4 +45,4 @@ public class RequestPermissions {
         }
     }
 
-    public static void onRequ
+    public static void onRequestPermissions
