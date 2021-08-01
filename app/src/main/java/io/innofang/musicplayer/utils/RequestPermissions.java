@@ -45,4 +45,4 @@ public class RequestPermissions {
         }
     }
 
-    public static void onRequestPermissions
+    public static void onRequestPermissionsResult(int requestCode, 
