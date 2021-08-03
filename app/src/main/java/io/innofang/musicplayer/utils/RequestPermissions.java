@@ -46,3 +46,4 @@ public class RequestPermissions {
     }
 
     public static void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if (requestCode == PERMISSI
