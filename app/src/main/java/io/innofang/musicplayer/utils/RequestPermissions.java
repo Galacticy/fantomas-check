@@ -48,4 +48,4 @@ public class RequestPermissions {
     public static void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         if (requestCode == PERMISSIONS_REQUEST_CODE) {
             if (grantResults.length > 0) {
-              
+                List<String> denied
