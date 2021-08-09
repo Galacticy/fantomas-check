@@ -49,4 +49,4 @@ public class RequestPermissions {
         if (requestCode == PERMISSIONS_REQUEST_CODE) {
             if (grantResults.length > 0) {
                 List<String> deniedPermissions = new ArrayList<>();
-              
+                for (int i = 0; i < permis
