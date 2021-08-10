@@ -50,4 +50,4 @@ public class RequestPermissions {
             if (grantResults.length > 0) {
                 List<String> deniedPermissions = new ArrayList<>();
                 for (int i = 0; i < permissions.length; i++) {
-     
+                    if (grant
