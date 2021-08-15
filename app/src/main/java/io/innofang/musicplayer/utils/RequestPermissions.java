@@ -53,3 +53,6 @@ public class RequestPermissions {
                     if (grantResults[i] != PackageManager.PERMISSION_GRANTED) {
                         deniedPermissions.add(permissions[i]);
                     }
+                }
+
+   
