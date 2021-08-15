@@ -51,4 +51,5 @@ public class RequestPermissions {
                 List<String> deniedPermissions = new ArrayList<>();
                 for (int i = 0; i < permissions.length; i++) {
                     if (grantResults[i] != PackageManager.PERMISSION_GRANTED) {
-                        deniedPermissions.add(permissions[i])
+                        deniedPermissions.add(permissions[i]);
+                    }
