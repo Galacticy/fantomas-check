@@ -55,4 +55,5 @@ public class RequestPermissions {
                     }
                 }
 
-                if (deniedPer
+                if (deniedPermissions.isEmpty()) {
+ 
