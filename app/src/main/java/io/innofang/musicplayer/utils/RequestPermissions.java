@@ -56,4 +56,5 @@ public class RequestPermissions {
                 }
 
                 if (deniedPermissions.isEmpty()) {
-                    sListener.onG
+                    sListener.onGranted();
+             
