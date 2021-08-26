@@ -60,4 +60,8 @@ public class RequestPermissions {
                 } else {
                     sListener.onDenied(deniedPermissions);
                 }
+            }
+        }
+    }
+
     
