@@ -64,4 +64,6 @@ public class RequestPermissions {
         }
     }
 
-    public interface OnPermissionsReq
+    public interface OnPermissionsRequestListener {
+
+        /
