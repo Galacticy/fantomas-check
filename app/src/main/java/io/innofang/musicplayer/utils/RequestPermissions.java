@@ -66,4 +66,5 @@ public class RequestPermissions {
 
     public interface OnPermissionsRequestListener {
 
-        /
+        // 权限被同意的时候调用
+        public vo
