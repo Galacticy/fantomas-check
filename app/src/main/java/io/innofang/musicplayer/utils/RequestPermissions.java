@@ -69,4 +69,5 @@ public class RequestPermissions {
         // 权限被同意的时候调用
         public void onGranted();
 
-        // 被拒绝
+        // 被拒绝的时候调用
+        public vo
