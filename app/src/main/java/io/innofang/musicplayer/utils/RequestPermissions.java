@@ -70,4 +70,4 @@ public class RequestPermissions {
         public void onGranted();
 
         // 被拒绝的时候调用
-        public vo
+        public void onDenied(List<String> deni
