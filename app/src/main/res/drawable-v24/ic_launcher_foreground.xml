@@ -2,4 +2,5 @@
         xmlns:aapt="http://schemas.android.com/aapt"
         android:width="108dp"
         android:height="108dp"
-        android:viewportHeigh
+        android:viewportHeight="108"
+        android:view
