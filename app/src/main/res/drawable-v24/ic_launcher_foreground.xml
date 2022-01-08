@@ -12,4 +12,5 @@
         <aapt:attr name="android:fillColor">
             <gradient
                 android:endX="78.5885"
-                andr
+                android:endY="90.9159"
+      
