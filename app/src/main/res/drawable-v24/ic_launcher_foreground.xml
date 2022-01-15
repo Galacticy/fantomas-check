@@ -17,4 +17,5 @@
                 android:startY="61.0927"
                 android:type="linear">
                 <item
-                    android:col
+                    android:color="#44000000"
+          
