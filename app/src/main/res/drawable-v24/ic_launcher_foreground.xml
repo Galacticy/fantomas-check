@@ -27,4 +27,5 @@
     </path>
     <path
         android:fillColor="#FFFFFF"
-        android:fi
+        android:fillType="nonZero"
+        and
