@@ -26,4 +26,5 @@
         </aapt:attr>
     </path>
     <path
-        android:fillColor=
+        android:fillColor="#FFFFFF"
+        android:fi
