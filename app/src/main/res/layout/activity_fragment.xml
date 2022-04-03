@@ -2,4 +2,4 @@
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/fragment_container"
-    a
+    android:layout_width="matc
