@@ -7,4 +7,5 @@
 
     <RelativeLayout
         android:id="@+id/control_pane_layout"
-        android:layout_width="match_pa
+        android:layout_width="match_parent"
+        android:l
