@@ -6,4 +6,5 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
-        android:id="@+id/contro
+        android:id="@+id/control_pane_layout"
+        android
