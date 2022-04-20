@@ -13,4 +13,5 @@
         android:background="@drawable/bg_control_pane"
         android:padding="10dp">
 
-        <I
+        <ImageView
+            android
