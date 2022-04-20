@@ -11,4 +11,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@drawable/bg_control_pane"
-        android:
+        android:padding="10dp">
+
+        <I
