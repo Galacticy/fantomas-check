@@ -14,4 +14,4 @@
         android:padding="10dp">
 
         <ImageView
-            android
+            android:id="@+id/play_or_pause_im
