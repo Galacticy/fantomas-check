@@ -15,4 +15,5 @@
 
         <ImageView
             android:id="@+id/play_or_pause_image_view"
-            android:layout_widt
+            android:layout_width="50dp"
+            android:lay
