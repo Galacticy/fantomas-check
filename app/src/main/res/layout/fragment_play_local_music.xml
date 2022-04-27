@@ -17,4 +17,5 @@
             android:id="@+id/play_or_pause_image_view"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_centerInPar
+            android:layout_centerInParent="true"
+            android:layout
