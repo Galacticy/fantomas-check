@@ -24,4 +24,5 @@
             android:src="@drawable/ic_play"/>
 
         <ImageView
-            android:id="@+id
+            android:id="@+id/skip_previous_image_view"
+       
