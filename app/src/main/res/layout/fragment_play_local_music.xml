@@ -26,4 +26,5 @@
         <ImageView
             android:id="@+id/skip_previous_image_view"
             android:layout_width="30dp"
-            android:layout_he
+            android:layout_height="30dp"
+            android:layout_cen
