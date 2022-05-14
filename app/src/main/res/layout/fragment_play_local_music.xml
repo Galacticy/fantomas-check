@@ -27,4 +27,5 @@
             android:id="@+id/skip_previous_image_view"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_cen
+            android:layout_centerVertical="true"
+ 
