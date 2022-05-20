@@ -30,4 +30,4 @@
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@id/play_or_pause_image_view"
             android:foreground="?android:attr/selectableItemBackground"
-            android:src="@drawab
+            android:src="@drawable/ic_skip_previous"
