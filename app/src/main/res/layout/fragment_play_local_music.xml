@@ -33,4 +33,5 @@
             android:src="@drawable/ic_skip_previous"/>
 
         <ImageView
-            android:id="@+id/ski
+            android:id="@+id/skip_next_image_view"
+    
