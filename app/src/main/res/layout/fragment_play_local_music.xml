@@ -34,4 +34,4 @@
 
         <ImageView
             android:id="@+id/skip_next_image_view"
-    
+            android:layout_width="30dp
