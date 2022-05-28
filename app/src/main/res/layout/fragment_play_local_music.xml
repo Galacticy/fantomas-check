@@ -35,4 +35,5 @@
         <ImageView
             android:id="@+id/skip_next_image_view"
             android:layout_width="30dp"
-            android:layout_height=
+            android:layout_height="30dp"
+            android:l
