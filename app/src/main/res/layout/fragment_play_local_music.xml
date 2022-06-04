@@ -39,4 +39,4 @@
             android:layout_centerVertical="true"
             android:layout_toRightOf="@id/play_or_pause_image_view"
             android:foreground="?android:attr/selectableItemBackground"
-   
+            android:src="@dr
