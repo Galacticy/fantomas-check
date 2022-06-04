@@ -38,4 +38,5 @@
             android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@id/play_or_pause_image_view"
-            android:foreground="?android:attr
+            android:foreground="?android:attr/selectableItemBackground"
+   
