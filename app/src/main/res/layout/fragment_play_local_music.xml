@@ -43,4 +43,4 @@
 
 
         <ImageView
-     
+            android:id="@+id/pla
