@@ -43,4 +43,5 @@
 
 
         <ImageView
-            android:id="@+id/pla
+            android:id="@+id/play_mode_image_view"
+         
