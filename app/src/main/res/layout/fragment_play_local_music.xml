@@ -44,4 +44,5 @@
 
         <ImageView
             android:id="@+id/play_mode_image_view"
-            android:layout_width="30
+            android:layout_width="30dp"
+            android:layout_he
