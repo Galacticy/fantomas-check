@@ -48,4 +48,4 @@
             android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:layout_marginStart="10dp"
-            andr
+            android:foreground="?android:
