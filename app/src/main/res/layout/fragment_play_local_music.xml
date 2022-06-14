@@ -48,4 +48,5 @@
             android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:layout_marginStart="10dp"
-            android:foreground="?android:attr/selectableItemBackg
+            android:foreground="?android:attr/selectableItemBackground"
+            androi
