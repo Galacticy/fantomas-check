@@ -53,4 +53,5 @@
     </RelativeLayout>
 
     <SeekBar
-        android:id="@+id/see
+        android:id="@+id/seek_bar"
+        android:la
