@@ -61,4 +61,5 @@
         android:layout_above="@id/control_pane_layout"/>
 
 
-    <android.support.v7.widget
+    <android.support.v7.widget.RecyclerView
+        android
