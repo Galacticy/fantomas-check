@@ -62,4 +62,4 @@
 
 
     <android.support.v7.widget.RecyclerView
-        android
+        android:id="@+id/music_recycler_v
