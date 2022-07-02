@@ -67,3 +67,5 @@
         android:layout_height="match_parent"
         android:layout_above="@id/seek_bar"
         tools:listitem="@layout/item_music"/>
+
+</RelativeLayout>
