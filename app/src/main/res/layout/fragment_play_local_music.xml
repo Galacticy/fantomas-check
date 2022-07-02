@@ -65,4 +65,5 @@
         android:id="@+id/music_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_ab
+        android:layout_above="@id/seek_bar"
+        tools:l
