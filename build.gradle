@@ -22,4 +22,5 @@ allprojects {
     }
 }
 
-t
+task clean(type: Delete) {
+    
