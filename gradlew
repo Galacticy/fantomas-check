@@ -6,4 +6,4 @@
 ##
 ##############################################################################
 
-# Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OP
+# Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to th
