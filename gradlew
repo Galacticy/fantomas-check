@@ -10,3 +10,4 @@
 DEFAULT_JVM_OPTS=""
 
 APP_NAME="Gradle"
+APP_BASE_NAME=`basename
