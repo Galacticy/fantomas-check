@@ -26,4 +26,4 @@ die ( ) {
     exit 1
 }
 
-# OS
+# OS specific support (must b
