@@ -31,4 +31,7 @@ cygwin=false
 msys=false
 darwin=false
 case "`uname`" in
-  CYGWIN
+  CYGWIN* )
+    cygwin=true
+    ;;
+  Da
