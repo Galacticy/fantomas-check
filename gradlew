@@ -42,4 +42,5 @@ case "`uname`" in
     ;;
 esac
 
-# Att
+# Attempt to set APP_HOME
+# Resolv
