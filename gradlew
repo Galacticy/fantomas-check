@@ -43,4 +43,5 @@ case "`uname`" in
 esac
 
 # Attempt to set APP_HOME
-# Resolv
+# Resolve links: $0 may be a link
+PRG="
