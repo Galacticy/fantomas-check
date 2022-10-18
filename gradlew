@@ -53,4 +53,7 @@ while [ -h "$PRG" ] ; do
         PRG="$link"
     else
         PRG=`dirname "$PRG"`"/$link"
-    f
+    fi
+done
+SAVED="`pwd`"
+cd "`dirna
