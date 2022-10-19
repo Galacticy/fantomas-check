@@ -56,4 +56,4 @@ while [ -h "$PRG" ] ; do
     fi
 done
 SAVED="`pwd`"
-cd "`dirna
+cd "`dirname \"$PRG\"`/" >/dev/n
