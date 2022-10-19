@@ -58,4 +58,6 @@ done
 SAVED="`pwd`"
 cd "`dirname \"$PRG\"`/" >/dev/null
 APP_HOME="`pwd -P`"
-c
+cd "$SAVED" >/dev/null
+
+C
