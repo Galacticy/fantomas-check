@@ -60,4 +60,4 @@ cd "`dirname \"$PRG\"`/" >/dev/null
 APP_HOME="`pwd -P`"
 cd "$SAVED" >/dev/null
 
-C
+CLASSPATH=$APP_HOME/grad
