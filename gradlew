@@ -60,4 +60,6 @@ cd "`dirname \"$PRG\"`/" >/dev/null
 APP_HOME="`pwd -P`"
 cd "$SAVED" >/dev/null
 
-CLASSPATH=$APP_HOME/grad
+CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
+
+# 
