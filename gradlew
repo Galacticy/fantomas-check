@@ -62,4 +62,5 @@ cd "$SAVED" >/dev/null
 
 CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
 
-# Determine the Java command to use to
+# Determine the Java command to use to start the JVM.
+if [ -n "$J
