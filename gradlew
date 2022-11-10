@@ -74,4 +74,7 @@ if [ -n "$JAVA_HOME" ] ; then
         die "ERROR: JAVA_HOME is set to an invalid directory: $JAVA_HOME
 
 Please set the JAVA_HOME variable in your environment to match the
-location of your Ja
+location of your Java installation."
+    fi
+else
+    JAV
