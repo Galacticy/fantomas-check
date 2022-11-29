@@ -90,4 +90,5 @@ if [ "$cygwin" = "false" -a "$darwin" = "false" ] ; then
     if [ $? -eq 0 ] ; then
         if [ "$MAX_FD" = "maximum" -o "$MAX_FD" = "max" ] ; then
             MAX_FD="$MAX_FD_LIMIT"
-  
+        fi
+        ulimit -n 
