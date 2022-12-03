@@ -93,4 +93,4 @@ if [ "$cygwin" = "false" -a "$darwin" = "false" ] ; then
         fi
         ulimit -n $MAX_FD
         if [ $? -ne 0 ] ; then
-            warn "Coul
+            warn "Could not set maximum file descript
