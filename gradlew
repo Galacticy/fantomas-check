@@ -92,4 +92,5 @@ if [ "$cygwin" = "false" -a "$darwin" = "false" ] ; then
             MAX_FD="$MAX_FD_LIMIT"
         fi
         ulimit -n $MAX_FD
-        if [ $? -ne 0 
+        if [ $? -ne 0 ] ; then
+            warn "Coul
