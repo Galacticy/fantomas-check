@@ -100,4 +100,4 @@ if [ "$cygwin" = "false" -a "$darwin" = "false" ] ; then
     fi
 fi
 
-# For Darwin, add options to speci
+# For Darwin, add options to specify how the application appear
