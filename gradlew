@@ -109,4 +109,4 @@ fi
 if $cygwin ; then
     APP_HOME=`cygpath --path --mixed "$APP_HOME"`
     CLASSPATH=`cygpath --path --mixed "$CLASSPATH"`
-    JAVACMD=`cyg
+    JAVACMD=`cygpath --unix "$JAVACMD
