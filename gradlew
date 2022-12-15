@@ -112,4 +112,4 @@ if $cygwin ; then
     JAVACMD=`cygpath --unix "$JAVACMD"`
 
     # We build the pattern for arguments to be converted via cygpath
-    ROOTDIRSR
+    ROOTDIRSRAW=`find -L / -maxdepth 1 -m
