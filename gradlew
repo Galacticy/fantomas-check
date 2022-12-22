@@ -115,4 +115,6 @@ if $cygwin ; then
     ROOTDIRSRAW=`find -L / -maxdepth 1 -mindepth 1 -type d 2>/dev/null`
     SEP=""
     for dir in $ROOTDIRSRAW ; do
-        ROOTDIRS="$ROOTDIRS$SEP$dir
+        ROOTDIRS="$ROOTDIRS$SEP$dir"
+        SEP="|"
+   
