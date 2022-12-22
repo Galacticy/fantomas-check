@@ -117,4 +117,5 @@ if $cygwin ; then
     for dir in $ROOTDIRSRAW ; do
         ROOTDIRS="$ROOTDIRS$SEP$dir"
         SEP="|"
-   
+    done
+    OURCYGPATTERN="(
