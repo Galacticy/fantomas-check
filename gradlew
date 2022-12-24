@@ -118,4 +118,5 @@ if $cygwin ; then
         ROOTDIRS="$ROOTDIRS$SEP$dir"
         SEP="|"
     done
-    OURCYGPATTERN="(
+    OURCYGPATTERN="(^($ROOTDIRS))"
+    # Add 
