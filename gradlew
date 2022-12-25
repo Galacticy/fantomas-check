@@ -119,4 +119,4 @@ if $cygwin ; then
         SEP="|"
     done
     OURCYGPATTERN="(^($ROOTDIRS))"
-    # Add 
+    # Add a user-defined pattern to the cy
