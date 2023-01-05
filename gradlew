@@ -135,4 +135,5 @@ if $cygwin ; then
             eval `echo args$i`="\"$arg\""
         fi
         i=$((i+1))
-  
+    done
+    case $i in
