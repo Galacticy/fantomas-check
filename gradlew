@@ -138,4 +138,5 @@ if $cygwin ; then
     done
     case $i in
         (0) set -- ;;
-        (1) set -- "$args0" 
+        (1) set -- "$args0" ;;
+        (2) set -- "
