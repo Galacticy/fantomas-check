@@ -141,4 +141,5 @@ if $cygwin ; then
         (1) set -- "$args0" ;;
         (2) set -- "$args0" "$args1" ;;
         (3) set -- "$args0" "$args1" "$args2" ;;
-        (4) set -- "$args0" "$args1" 
+        (4) set -- "$args0" "$args1" "$args2" "$args3" ;;
+      
