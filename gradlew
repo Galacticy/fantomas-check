@@ -154,4 +154,4 @@ fi
 function splitJvmOpts() {
     JVM_OPTS=("$@")
 }
-eval splitJvmO
+eval splitJvmOpts $DEFAULT_JVM_OPTS $
